@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AJAX Doggos</title>
+</head>
+<body>
+    <h1 class="brand text-gradient">AJAX Doggos</h1>
+    <div class="centered content-select">
+        <label class="text-gradient" for="breed-select">Choose a breed:</label>
+        <div class="custom-select">
+            <select class="breed-options" name="breeds" id="breed-select">
+                <option selected="selected" value="0">Choose a breed ▼</option>
+            </select>
+        </div> 
+    </div>
+    <div class="centered">
+        <div class="loader"></div>
+        <div class="idiot">Choose a breed ▼ is not a breed idiot!!!</div>
+    </div>
+    <section class="breeds">
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>

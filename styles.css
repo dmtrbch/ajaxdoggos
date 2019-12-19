@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+}
+
+img {
+    width: 25%;
+    height: 400px;
+}
+
+.text-gradient {
+    background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.brand {
+    font-weight: normal;
+    font-size: 60px;
+    text-align: center;
+}
+
+.breeds {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.loader {
+    display: none;
+    border: 36px solid linear-gradient(to right, #99e2c4 ,#a09ce9);
+    border-top: 36px solid #33c085; /* Blue */
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    animation: spin 2s linear infinite;
+}
+
+.idiot {
+    display: none;
+    font-size: 80px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-select {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.custom-select {
+    padding: 1rem;
+    position: relative;
+    background: linear-gradient(to right, #00ff95 ,#09009f);
+    padding: 3px;
+}
+
+.custom-select select {
+    padding: 10px;
+    border: none;
+    box-shadow: none;
+    background-image: none;
+    -webkit-appearance: none;
+    outline: none;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    background: white;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+.custom-select select:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, #99e2c4 ,#a09ce9);
+}
+
+.content-select label {
+    padding-right: 20px;
+}
